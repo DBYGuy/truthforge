@@ -559,8 +559,8 @@
       ]
     },
     "/home/bunny/projects/truthforge-web3/contracts/ZKVerifier.sol": {
-      "lastModificationDate": 1753853622062,
-      "contentHash": "3a51e846c0eb8e7609983caa9dfe0b89",
+      "lastModificationDate": 1753937713268,
+      "contentHash": "331c9c79ff6d80dbbb85705fcbda191d",
       "sourceName": "contracts/ZKVerifier.sol",
       "solcConfig": {
         "version": "0.8.28",
