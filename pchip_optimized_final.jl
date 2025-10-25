@@ -1,5 +1,5 @@
 # TruthForge Bias Calculation: Optimized PCHIP Implementation
-# Dr. Alex Chen - Applied Mathematics Solution
+# Adam Flaum - Applied Mathematics Solution
 # Final optimized version targeting <1% mean error and better KS statistics
 
 using Distributions, Random, StatsBase, HypothesisTests, LinearAlgebra
