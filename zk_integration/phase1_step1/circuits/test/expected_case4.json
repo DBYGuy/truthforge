@@ -1,0 +1,6 @@
+{
+  "expected_output": 2,
+  "tolerance": 1,
+  "name": "Early transition",
+  "notes": "Interval 2 midpoint"
+}

@@ -1,0 +1,6 @@
+{
+  "expected_output": 24,
+  "tolerance": 1,
+  "name": "Mean region",
+  "notes": "Near distribution mean (~28.6%)"
+}

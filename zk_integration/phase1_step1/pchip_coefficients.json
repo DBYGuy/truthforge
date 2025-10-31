@@ -1,0 +1,238 @@
+{
+  "intervals": [
+    {
+      "beta_value_end": 0.581852,
+      "length": 5,
+      "range": [
+        0,
+        5
+      ],
+      "formula": "bias = (0 + 116370450*dx) / 1e9, where dx = u - 0",
+      "notes": "Early tail region - steep gradient",
+      "d_scaled": "0",
+      "beta_value_start": 0.0,
+      "b_scaled": "116370450",
+      "index": 0,
+      "a_scaled": "0",
+      "c_scaled": "0"
+    },
+    {
+      "beta_value_end": 3.845141,
+      "length": 195,
+      "range": [
+        5,
+        200
+      ],
+      "formula": "bias = (581852000 + 16734810*dx) / 1e9, where dx = u - 5",
+      "notes": "Low bias transition zone",
+      "d_scaled": "0",
+      "beta_value_start": 0.581852,
+      "b_scaled": "16734810",
+      "index": 1,
+      "a_scaled": "581852000",
+      "c_scaled": "0"
+    },
+    {
+      "beta_value_end": 8.156862,
+      "length": 600,
+      "range": [
+        200,
+        800
+      ],
+      "formula": "bias = (3845141000 + 7186200*dx) / 1e9, where dx = u - 200",
+      "notes": "Core distribution - gradual slope",
+      "d_scaled": "0",
+      "beta_value_start": 3.845141,
+      "b_scaled": "7186200",
+      "index": 2,
+      "a_scaled": "3845141000",
+      "c_scaled": "0"
+    },
+    {
+      "beta_value_end": 13.106995,
+      "length": 1000,
+      "range": [
+        800,
+        1800
+      ],
+      "formula": "bias = (8156862000 + 4950130*dx) / 1e9, where dx = u - 800",
+      "notes": "Core distribution - stable region",
+      "d_scaled": "0",
+      "beta_value_start": 8.156862,
+      "b_scaled": "4950130",
+      "index": 3,
+      "a_scaled": "8156862000",
+      "c_scaled": "0"
+    },
+    {
+      "beta_value_end": 20.218104,
+      "length": 1700,
+      "range": [
+        1800,
+        3500
+      ],
+      "formula": "bias = (13106995000 + 4183010*dx) / 1e9, where dx = u - 1800",
+      "notes": "Mid-range approach to mean",
+      "d_scaled": "0",
+      "beta_value_start": 13.106995,
+      "b_scaled": "4183010",
+      "index": 4,
+      "a_scaled": "13106995000",
+      "c_scaled": "0"
+    },
+    {
+      "beta_value_end": 28.641175,
+      "length": 2000,
+      "range": [
+        3500,
+        5500
+      ],
+      "formula": "bias = (20218104000 + 4211540*dx) / 1e9, where dx = u - 3500",
+      "notes": "Mean region (~28.6%)",
+      "d_scaled": "0",
+      "beta_value_start": 20.218104,
+      "b_scaled": "4211540",
+      "index": 5,
+      "a_scaled": "20218104000",
+      "c_scaled": "0"
+    },
+    {
+      "beta_value_end": 38.947949,
+      "length": 2000,
+      "range": [
+        5500,
+        7500
+      ],
+      "formula": "bias = (28641175000 + 5153390*dx) / 1e9, where dx = u - 5500",
+      "notes": "Upper distribution rise",
+      "d_scaled": "0",
+      "beta_value_start": 28.641175,
+      "b_scaled": "5153390",
+      "index": 6,
+      "a_scaled": "28641175000",
+      "c_scaled": "0"
+    },
+    {
+      "beta_value_end": 48.903108,
+      "length": 1300,
+      "range": [
+        7500,
+        8800
+      ],
+      "formula": "bias = (38947949000 + 7657810*dx) / 1e9, where dx = u - 7500",
+      "notes": "Penalty threshold approach (50%)",
+      "d_scaled": "0",
+      "beta_value_start": 38.947949,
+      "b_scaled": "7657810",
+      "index": 7,
+      "a_scaled": "38947949000",
+      "c_scaled": "0"
+    },
+    {
+      "beta_value_end": 65.826649,
+      "length": 1000,
+      "range": [
+        8800,
+        9800
+      ],
+      "formula": "bias = (48903108000 + 16923540*dx) / 1e9, where dx = u - 8800",
+      "notes": "High bias region",
+      "d_scaled": "0",
+      "beta_value_start": 48.903108,
+      "b_scaled": "16923540",
+      "index": 8,
+      "a_scaled": "48903108000",
+      "c_scaled": "0"
+    },
+    {
+      "beta_value_end": 100.0,
+      "length": 200,
+      "range": [
+        9800,
+        10000
+      ],
+      "formula": "bias = (65826649000 + 170866750*dx) / 1e9, where dx = u - 9800",
+      "notes": "Upper tail - very steep gradient",
+      "d_scaled": "0",
+      "beta_value_start": 65.826649,
+      "b_scaled": "170866750",
+      "index": 9,
+      "a_scaled": "65826649000",
+      "c_scaled": "0"
+    }
+  ],
+  "validation_metrics": {
+    "ks_statistic": 0.0164,
+    "mean_target": 28.57,
+    "mean_achieved": 28.81,
+    "penalty_rate_target": 0.104,
+    "penalty_rate_achieved": 0.1061,
+    "std_target": 16.04,
+    "std_achieved": 16.1,
+    "ks_threshold": 0.02
+  },
+  "knots": [
+    0,
+    5,
+    200,
+    800,
+    1800,
+    3500,
+    5500,
+    7500,
+    8800,
+    9800,
+    10000
+  ],
+  "metadata": {
+    "field": "BN254",
+    "field_prime": "21888242871839275222246405745257275088548364400416034343698204186575808495617",
+    "version": "CORRECTED_LINEAR_PCHIP_BETA_2_5_V1",
+    "source_file": "contracts/ZKVerifier.sol",
+    "constraint_estimate": "200-250 total (PCHIP + entropy)",
+    "validation": {
+      "requirements_met": "8/8",
+      "monotonicity_violations": 0,
+      "validation_sample_size": 100001,
+      "penalty_error_pts": 0.1,
+      "continuity_max_gap": 9.0e-6,
+      "mean_error_pct": 1.73
+    },
+    "implementation": "Linear PCHIP Beta(2,5)",
+    "mathematical_form": "f(u) = (a + b * (u - u_i)) / scale_factor",
+    "date_generated": "2025-10-30",
+    "source_function": "_calculateBiasV2",
+    "source_lines": "228-258"
+  },
+  "quantile_values": [
+    0.0,
+    0.581852,
+    3.845141,
+    8.156862,
+    13.106995,
+    20.218104,
+    28.641175,
+    38.947949,
+    48.903108,
+    65.826649,
+    100.0
+  ],
+  "configuration": {
+    "scale_factor_notation": "1e9",
+    "input_range": [
+      0,
+      10000
+    ],
+    "num_intervals": 10,
+    "polynomial_type": "linear",
+    "output_range": [
+      0,
+      100
+    ],
+    "output_description": "Bias percentage",
+    "input_description": "Uniform distribution [0, 9999]",
+    "scale_factor": 1000000000,
+    "num_knots": 11,
+    "polynomial_degree": 1
+  }
+}

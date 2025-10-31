@@ -1,0 +1,6 @@
+{
+  "expected_output": 82,
+  "tolerance": 2,
+  "name": "Near upper boundary",
+  "notes": "Very steep gradient region"
+}

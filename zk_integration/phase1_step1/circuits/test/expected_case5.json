@@ -1,0 +1,6 @@
+{
+  "expected_output": 3,
+  "tolerance": 1,
+  "name": "Second knot",
+  "notes": "Boundary between intervals 2-3"
+}

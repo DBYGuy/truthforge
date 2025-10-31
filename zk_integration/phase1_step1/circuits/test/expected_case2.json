@@ -1,0 +1,6 @@
+{
+  "expected_output": 0,
+  "tolerance": 1,
+  "name": "First interval midpoint",
+  "notes": "Within first steep region"
+}

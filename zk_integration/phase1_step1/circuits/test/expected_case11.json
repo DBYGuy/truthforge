@@ -1,0 +1,6 @@
+{
+  "expected_output": 100,
+  "tolerance": 1,
+  "name": "Upper boundary",
+  "notes": "Maximum domain value"
+}

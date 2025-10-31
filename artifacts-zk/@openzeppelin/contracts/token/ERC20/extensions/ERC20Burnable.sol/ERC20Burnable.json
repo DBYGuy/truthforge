@@ -1,5 +1,5 @@
 {
-  "_format": "hh-sol-artifact-1",
+  "_format": "hh-zksolc-artifact-1",
   "contractName": "ERC20Burnable",
   "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol",
   "abi": [
@@ -346,5 +346,6 @@
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "linkReferences": {},
-  "deployedLinkReferences": {}
+  "deployedLinkReferences": {},
+  "factoryDeps": {}
 }

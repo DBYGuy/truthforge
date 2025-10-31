@@ -1,0 +1,6 @@
+{
+  "expected_output": 65,
+  "tolerance": 1,
+  "name": "Upper tail start",
+  "notes": "Start of steep upper tail"
+}

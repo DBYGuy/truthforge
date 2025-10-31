@@ -1,0 +1,6 @@
+{
+  "expected_output": 9,
+  "tolerance": 1,
+  "name": "Core distribution",
+  "notes": "Interval 4 - stable region"
+}

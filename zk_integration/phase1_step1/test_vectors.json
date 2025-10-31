@@ -1,0 +1,94 @@
+{
+  "bulk_validation": {
+    "tolerance_mean_pct": 2.0,
+    "method": "Generate 10,000+ random samples and compute statistics",
+    "tolerance_penalty_pts": 1.0,
+    "expected_mean": 28.57,
+    "sample_points": 10001,
+    "tolerance_std_pct": 3.0,
+    "expected_penalty_rate": 0.104,
+    "description": "Statistical validation over full range",
+    "expected_std": 16.04
+  },
+  "usage": "Compare CIRCOM circuit output against expected_output for each test case",
+  "description": "Test vectors for validating CIRCOM implementation against Solidity reference",
+  "test_cases": [
+    {
+      "name": "Lower boundary",
+      "uniform_input": 0,
+      "notes": "Exact zero at domain start",
+      "expected_output": 0,
+      "tolerance": 0
+    },
+    {
+      "name": "First interval midpoint",
+      "uniform_input": 3,
+      "notes": "Within first steep region",
+      "expected_output": 0,
+      "tolerance": 1
+    },
+    {
+      "name": "First knot boundary",
+      "uniform_input": 5,
+      "notes": "Boundary between intervals 1-2",
+      "expected_output": 0,
+      "tolerance": 1
+    },
+    {
+      "name": "Early transition",
+      "uniform_input": 100,
+      "notes": "Interval 2 midpoint",
+      "expected_output": 2,
+      "tolerance": 1
+    },
+    {
+      "name": "Second knot",
+      "uniform_input": 200,
+      "notes": "Boundary between intervals 2-3",
+      "expected_output": 3,
+      "tolerance": 1
+    },
+    {
+      "name": "Core distribution",
+      "uniform_input": 1000,
+      "notes": "Interval 4 - stable region",
+      "expected_output": 9,
+      "tolerance": 1
+    },
+    {
+      "name": "Mean region",
+      "uniform_input": 5000,
+      "notes": "Near distribution mean (~28.6%)",
+      "expected_output": 24,
+      "tolerance": 1
+    },
+    {
+      "name": "Penalty threshold",
+      "uniform_input": 8800,
+      "notes": "Start of high bias region",
+      "expected_output": 48,
+      "tolerance": 1
+    },
+    {
+      "name": "Upper tail start",
+      "uniform_input": 9800,
+      "notes": "Start of steep upper tail",
+      "expected_output": 65,
+      "tolerance": 1
+    },
+    {
+      "name": "Near upper boundary",
+      "uniform_input": 9900,
+      "notes": "Very steep gradient region",
+      "expected_output": 82,
+      "tolerance": 2
+    },
+    {
+      "name": "Upper boundary",
+      "uniform_input": 9999,
+      "notes": "Maximum domain value",
+      "expected_output": 100,
+      "tolerance": 1
+    }
+  ]
+}

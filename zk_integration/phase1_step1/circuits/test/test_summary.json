@@ -1,0 +1,116 @@
+{
+  "description": "Summary of all CIRCOM test cases",
+  "total_cases": 11,
+  "bulk_validation": {
+    "tolerance_mean_pct": 2.0,
+    "method": "Generate 10,000+ random samples and compute statistics",
+    "tolerance_penalty_pts": 1.0,
+    "expected_mean": 28.57,
+    "sample_points": 10001,
+    "tolerance_std_pct": 3.0,
+    "expected_penalty_rate": 0.104,
+    "description": "Statistical validation over full range",
+    "expected_std": 16.04
+  },
+  "test_cases": [
+    {
+      "case": 1,
+      "name": "Lower boundary",
+      "input": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "input_file": "input_case1.json",
+      "expected_file": "expected_case1.json"
+    },
+    {
+      "case": 2,
+      "name": "First interval midpoint",
+      "input": 3,
+      "expected": 0,
+      "tolerance": 1,
+      "input_file": "input_case2.json",
+      "expected_file": "expected_case2.json"
+    },
+    {
+      "case": 3,
+      "name": "First knot boundary",
+      "input": 5,
+      "expected": 0,
+      "tolerance": 1,
+      "input_file": "input_case3.json",
+      "expected_file": "expected_case3.json"
+    },
+    {
+      "case": 4,
+      "name": "Early transition",
+      "input": 100,
+      "expected": 2,
+      "tolerance": 1,
+      "input_file": "input_case4.json",
+      "expected_file": "expected_case4.json"
+    },
+    {
+      "case": 5,
+      "name": "Second knot",
+      "input": 200,
+      "expected": 3,
+      "tolerance": 1,
+      "input_file": "input_case5.json",
+      "expected_file": "expected_case5.json"
+    },
+    {
+      "case": 6,
+      "name": "Core distribution",
+      "input": 1000,
+      "expected": 9,
+      "tolerance": 1,
+      "input_file": "input_case6.json",
+      "expected_file": "expected_case6.json"
+    },
+    {
+      "case": 7,
+      "name": "Mean region",
+      "input": 5000,
+      "expected": 24,
+      "tolerance": 1,
+      "input_file": "input_case7.json",
+      "expected_file": "expected_case7.json"
+    },
+    {
+      "case": 8,
+      "name": "Penalty threshold",
+      "input": 8800,
+      "expected": 48,
+      "tolerance": 1,
+      "input_file": "input_case8.json",
+      "expected_file": "expected_case8.json"
+    },
+    {
+      "case": 9,
+      "name": "Upper tail start",
+      "input": 9800,
+      "expected": 65,
+      "tolerance": 1,
+      "input_file": "input_case9.json",
+      "expected_file": "expected_case9.json"
+    },
+    {
+      "case": 10,
+      "name": "Near upper boundary",
+      "input": 9900,
+      "expected": 82,
+      "tolerance": 2,
+      "input_file": "input_case10.json",
+      "expected_file": "expected_case10.json"
+    },
+    {
+      "case": 11,
+      "name": "Upper boundary",
+      "input": 9999,
+      "expected": 100,
+      "tolerance": 1,
+      "input_file": "input_case11.json",
+      "expected_file": "expected_case11.json"
+    }
+  ]
+}
